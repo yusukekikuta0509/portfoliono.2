@@ -1,55 +1,44 @@
-# Yusuke Kikuta's Portfolio
+# 菊田佑輔のポートフォリオサイト
 
-This is my personal portfolio website built with modern web technologies to showcase my skills and projects as a frontend engineer.
+このリポジトリは、菊田佑輔の個人ポートフォリオサイトのソースコードです。最新のWeb技術を駆使して、フロントエンドエンジニアとしてのスキルやプロジェクトを紹介しています。
 
-## 🛠 Tech Stack
+## 使用技術
 
-- **Frontend Framework:** React 18 with TypeScript
-- **Build Tool:** Vite
-- **Styling:** Tailwind CSS
-- **Animations:** Framer Motion
-- **Typography:** 
-  - Quicksand (English)
-  - Noto Sans JP (Japanese)
+- **フロントエンドフレームワーク:** React 18
+- **プログラミング言語:** TypeScript
+- **ビルドツール:** Vite
+- **スタイリング:** Tailwind CSS
+- **アニメーション:** Framer Motion
 
-## 🌟 Features
+## 特徴
 
-- Responsive design for all device sizes
-- Smooth scroll animations
-- Bilingual content (Japanese/English)
-- Modern, minimalist UI
-- Interactive components
-- Performance optimized
+- レスポンシブデザイン
+- スムーズなアニメーション
+- 日本語と英語のバイリンガル対応
+- モダンでミニマルなUI
 
-## 🚀 Getting Started
+## セットアップ
 
-1. Clone the repository
-```bash
-git clone https://github.com/yusuke0509/portfolio-new.git
-```
+1. リポジトリをクローンします。
+   ```bash
+   git clone https://github.com/yusuke0509/portfolio-new.git
+   ```
 
-2. Install dependencies
-```bash
-npm install
-```
+2. 依存関係をインストールします。
+   ```bash
+   npm install
+   ```
 
-3. Start the development server
-```bash
-npm run dev
-```
+3. 開発サーバーを起動します。
+   ```bash
+   npm run dev
+   ```
 
-4. Build for production
-```bash
-npm run build
-```
+4. 本番環境用にビルドします。
+   ```bash
+   npm run build
+   ```
 
-## 🎨 Design
+## ライセンス
 
-The website features a minimalist design with a carefully chosen color palette:
-- Background: #2C5549 (Deep Green)
-- Text: #C7BDB5 (Beige Gray)
-- Accent: #AF8C68 (Golden Brown)
-
-## 📝 License
-
-© 2024 Yusuke Kikuta. All rights reserved.
+このプロジェクトは、菊田佑輔の著作権の下で提供されています。

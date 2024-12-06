@@ -22,6 +22,7 @@ const Skills = () => {
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
+                <li>TypeScript</li>
                 <li>Python</li>
                 <li>PHP</li>
               </ul>
@@ -32,6 +33,9 @@ const Skills = () => {
               <h3 className="text-2xl md:text-3xl text-accent mb-6">Frontend Frameworks</h3>
               <ul className="space-y-3 text-lg md:text-xl text-text">
                 <li>React</li>
+                <li>Vite</li>
+                <li>Tailwind CSS</li>
+                <li>Framer Motion</li>
               </ul>
             </div>
 
