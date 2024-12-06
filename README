@@ -1,0 +1,55 @@
+# Yusuke Kikuta's Portfolio
+
+This is my personal portfolio website built with modern web technologies to showcase my skills and projects as a frontend engineer.
+
+## 🛠 Tech Stack
+
+- **Frontend Framework:** React 18 with TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Typography:** 
+  - Quicksand (English)
+  - Noto Sans JP (Japanese)
+
+## 🌟 Features
+
+- Responsive design for all device sizes
+- Smooth scroll animations
+- Bilingual content (Japanese/English)
+- Modern, minimalist UI
+- Interactive components
+- Performance optimized
+
+## 🚀 Getting Started
+
+1. Clone the repository
+```bash
+git clone https://github.com/yusuke0509/portfolio-new.git
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start the development server
+```bash
+npm run dev
+```
+
+4. Build for production
+```bash
+npm run build
+```
+
+## 🎨 Design
+
+The website features a minimalist design with a carefully chosen color palette:
+- Background: #2C5549 (Deep Green)
+- Text: #C7BDB5 (Beige Gray)
+- Accent: #AF8C68 (Golden Brown)
+
+## 📝 License
+
+© 2024 Yusuke Kikuta. All rights reserved.
