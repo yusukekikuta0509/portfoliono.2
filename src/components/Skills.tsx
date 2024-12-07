@@ -34,7 +34,6 @@ const Skills = () => {
               <ul className="space-y-3 text-lg md:text-xl text-text">
                 <li>React</li>
                 <li>Vite</li>
-                <li>Tailwind CSS</li>
                 <li>Framer Motion</li>
               </ul>
             </div>
@@ -45,7 +44,6 @@ const Skills = () => {
               <ul className="space-y-3 text-lg md:text-xl text-text">
                 <li>Django</li>
                 <li>Flask</li>
-                <li>Node.js</li>
               </ul>
             </div>
 
