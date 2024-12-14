@@ -18,7 +18,13 @@ const Projects = () => {
       imageUrl: appImage,
       link: "https://yusukekikuta0509.github.io/yusukewether/project/index.html",
     },
-    // 他のプロジェクトを追加できます
+    {
+      title: "Scraping Tool", 
+      description: "Pythonとseleniumを使用してDeFi領域における各種指標データを定期実行するスクレイピングツールを作成しました。",
+      detailedDescription: "I have developed a scraping tool using Python and Selenium to regularly collect various metric data in the DeFi domain.",
+      fontWeight: "font-light",
+
+    },
   ];
 
   return (
