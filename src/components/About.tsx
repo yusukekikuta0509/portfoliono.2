@@ -20,7 +20,7 @@ const About = () => {
               {/* About Me タイトルとプロフィール画像 */}
               <h2 className="text-4xl md:text-5xl font-display font-medium text-accent">About Me</h2>
               <img
-                src="IMG_1012.jpg" // 画像パスを適切に変更
+                src="/IMG_1012.jpg" // 画像パスを適切に変更
                 alt="Yusuke Kikuta"
                 className="profile-image"
               />
