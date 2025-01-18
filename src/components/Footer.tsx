@@ -14,14 +14,7 @@ const Footer = () => {
         viewport={{ once: true }}
       >
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <a
-            href="https://github.com/yusukekikuta0509"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-text hover:text-accent transition-colors"
-          >
-            GitHub
-          </a>
+          
           <p className="text-sm text-text/80">
             {currentYear} Yusuke Kikuta. All rights reserved.
           </p>

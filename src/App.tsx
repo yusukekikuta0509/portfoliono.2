@@ -1,12 +1,13 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Loading from './components/Loading'
-import Home from './pages/Home'
+import React from 'react';
+import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import './index.css';
+import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 
-function App({ isDarkMode, toggleDarkMode }: { isDarkMode: boolean; toggleDarkMode: () => void; }) {
+function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [isEnglishMode, setIsEnglishMode] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -16,28 +17,32 @@ function App({ isDarkMode, toggleDarkMode }: { isDarkMode: boolean; toggleDarkMo
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-    if (isDarkMode) {
-      document.body.classList.add('dark');
-    } else {
-      document.body.classList.remove('dark');
-    }
-  }, [isDarkMode]);
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-background text-text">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-accent border-opacity-50 mb-4"></div>
+          <p className="text-lg font-medium font-serif">
+            {isEnglishMode ? 'Loading...' : '読み込み中...'}
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>
-      {isLoading ? (
-        <Loading key="loading" />
-      ) : (
-        <div className="bg-background text-text min-h-screen">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-          </Routes>
-        </div>
-      )}
+      <div className="min-h-screen bg-background text-text">
+        <header className="flex justify-between items-center p-4">
+          
+        </header>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+        </Routes>
+      </div>
     </>
   );
 }
 
-export default App
+export default App;

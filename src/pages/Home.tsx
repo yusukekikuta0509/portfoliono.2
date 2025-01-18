@@ -4,18 +4,6 @@ import { useNavigate } from 'react-router-dom';
 function Home() {
   const navigate = useNavigate();
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: { 
-      opacity: 1,
-      transition: { 
-        duration: 0.5,
-        when: "beforeChildren",
-        staggerChildren: 0.3
-      }
-    }
-  };
-
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { 
@@ -27,18 +15,23 @@ function Home() {
 
   return (
     <div className="h-screen overflow-hidden">
-      <motion.div
-        className="h-screen bg-background relative"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
+      <div className="h-screen bg-background relative">
         <div className="h-full flex items-center justify-center px-4 relative">
           <motion.div 
             className="text-center relative z-10 -mt-20"
-            variants={containerVariants}
             initial="hidden"
             animate="visible"
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { 
+                opacity: 1,
+                transition: { 
+                  duration: 0.5,
+                  when: "beforeChildren",
+                  staggerChildren: 0.3
+                }
+              }
+            }}
           >
             <motion.h1 
               className="text-6xl md:text-7xl font-display font-medium tracking-wider mb-8"
@@ -83,7 +76,7 @@ function Home() {
             <div className="absolute inset-0 bg-gradient-to-r from-accent to-background transform rotate-45"></div>
           </motion.div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }

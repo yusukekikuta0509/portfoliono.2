@@ -20,10 +20,49 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-body {
-  @apply bg-background text-text;
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  overflow-x: hidden;
+/* Text shadow */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Highlight text */
+.highlight {
+  color: #AF8C68; /* ハイライトテキストの色を直接指定 */
+}
+
+/* Fonts */
+.font-display {
+  font-family: Montserrat, sans-serif;
+}
+.font-jp {
+  font-family: Roboto, sans-serif;
+}
+
+/* Profile Image Styling */
+.profile-image {
+  width: 7rem; /* 画像の幅 */
+  height: 7rem; /* 画像の高さ */
+  border-radius: 9999px; /* 丸い形 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1); /* 影を追加 */
+  object-fit: cover; /* アスペクト比を保持してフィット */
+}
+
+/* About Me Layout Styling */
+.about-container {
+  display: flex;
+  align-items: center; /* 垂直方向で中央揃え */
+  justify-content: center; /* 水平方向で中央揃え */
+  gap: 2rem; /* タイトルと画像の間隔 */
+  margin-bottom: 1rem;
+  margin-left: 7.5rem;
+}
+
+/* Social Icon Styling */
+.social-icon {
+  font-size: 2.5rem; /* アイコンサイズ */
+  color: #AF8C68; /* アクセントカラー */
+  transition: color 0.2s;
+}
+.social-icon:hover {
+  color: rgba(120, 104, 89, 0.8); /* ホバー時の色 */
 }

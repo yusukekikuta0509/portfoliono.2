@@ -14,19 +14,19 @@ const Contact = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-display font-light text-accent mb-12">Contact Me</h2>
-          <div className="space-y-8">
-            <div className="bg-background/30 p-6 rounded-lg">
-              <div className="flex flex-col items-start space-y-6">
-                <p className="text-lg md:text-xl text-text">
-                  Feel free to reach out to me for any inquiries or collaboration opportunities.
-                </p>
-                <div className="flex flex-col space-y-2">
-                  <span className="text-lg md:text-xl text-text">Email:</span>
-                  <a
-                    href="mailto:yusukekikuta.05@gmail.com"
-                    className="text-lg md:text-xl text-accent hover:text-accent/80 transition-colors"
-                  >
-                    yusukekikuta.05@gmail.com
+            <div className="space-y-8 text-center">
+              <div className="bg-background/30 p-6 rounded-lg">
+                <div className="flex flex-col items-center space-y-6">
+                  <p className="text-lg md:text-xl text-text">
+                    Feel free to reach out to me for any inquiries or collaboration opportunities.
+                  </p>
+                  <div className="flex flex-col space-y-2">
+                    <span className="text-lg md:text-xl">Email:</span>
+                    <a
+                      href="mailto:yusukekikuta.05@gmail.com"
+                      className="text-lg md:text-xl text-accent hover:text-accent/80 transition-colors"
+                    >
+                      yusukekikuta.05@gmail.com
                   </a>
                 </div>
               </div>
